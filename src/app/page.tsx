@@ -7,7 +7,9 @@ import './animate.css'
 
 export default function Home() {
     useEffect(()=>{
+        console.log('home')
         if (typeof window !== "undefined") {
+            console.log(window)
             const {WOW} = require('wowjs');
             console.log(WOW)
             if(WOW){
