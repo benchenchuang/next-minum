@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import './animate.css'
 
 export default function Home() {
+    console.log(1111)
     useEffect(()=>{
         console.log('home')
         if (typeof window !== "undefined") {
