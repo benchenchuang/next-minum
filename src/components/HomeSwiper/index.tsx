@@ -1,3 +1,10 @@
+/*
+ * @Author: Jimmy
+ * @LastModifiedBy: Jimmy
+ * @Date: 2023-12-24 10:39:44
+ * @LastEditTime: 2023-12-24 19:08:51
+ * @FilePath: /minum-website/src/components/HomeSwiper/index.tsx
+ */
 'use client';
 import React from 'react'
 import { Pagination,Autoplay,EffectCoverflow } from 'swiper/modules';
@@ -28,8 +35,8 @@ const HomeSwiper = () => {
                     modifier: 1,
                     slideShadows: true,
                 }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide style={{ background: "blue", height: "600px" }}>Slide 1</SwiperSlide>
                 <SwiperSlide style={{ background: "yellow", height: "600px" }}>Slide 2</SwiperSlide>
