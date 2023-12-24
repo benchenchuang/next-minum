@@ -19,7 +19,7 @@ const SiteNavbar = () => {
     ];
     return (
         <>
-            <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
+            <Navbar shouldHideOnScroll height="3rem" onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle
                         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
