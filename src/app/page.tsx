@@ -9,6 +9,7 @@ export default function Home() {
     useEffect(()=>{
         if (typeof window !== "undefined") {
             const {WOW} = require('wowjs');
+            console.log(WOW)
             if(WOW){
                 let wow = new WOW(
                     {
