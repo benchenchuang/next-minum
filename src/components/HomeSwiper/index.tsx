@@ -31,10 +31,10 @@ const HomeSwiper = () => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                <SwiperSlide style={{ background: "blue", height: "200px" }}>Slide 1</SwiperSlide>
-                <SwiperSlide style={{ background: "yellow", height: "200px" }}>Slide 2</SwiperSlide>
-                <SwiperSlide style={{ background: "pink", height: "200px" }}>Slide 3</SwiperSlide>
-                <SwiperSlide style={{ background: "lightblue", height: "200px" }}>Slide 4</SwiperSlide>
+                <SwiperSlide style={{ background: "blue", height: "600px" }}>Slide 1</SwiperSlide>
+                <SwiperSlide style={{ background: "yellow", height: "600px" }}>Slide 2</SwiperSlide>
+                <SwiperSlide style={{ background: "pink", height: "600px" }}>Slide 3</SwiperSlide>
+                <SwiperSlide style={{ background: "lightblue", height: "600px" }}>Slide 4</SwiperSlide>
             </Swiper>
             <style jsx global>
                 {`
