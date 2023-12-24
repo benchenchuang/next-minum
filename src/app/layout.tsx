@@ -4,7 +4,7 @@ import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import SiteNavbar from '@/components/SiteNavbar';
 import SiteFooter from '@/components/SiteFooter';
-import Head from 'next/head';
+import '@/styles/animate.css'
 
 export const metadata: Metadata = {
     title: {
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     keywords: siteConfig.keywords,
     icons: {
-		icon: "/favicon.ico",
-	},
+        icon: "/favicon.ico",
+    },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
