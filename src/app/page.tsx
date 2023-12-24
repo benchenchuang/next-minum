@@ -1,6 +1,7 @@
 "use client"
 import HomeSwiper from '@/components/HomeSwiper'
 import { Button } from '@nextui-org/react'
+// @ts-ignore
 import { WOW } from 'wowjs'
 import { useEffect } from 'react'
 import './animate.css'
