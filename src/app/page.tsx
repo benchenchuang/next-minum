@@ -6,13 +6,9 @@ import { useEffect } from 'react'
 import './animate.css'
 
 export default function Home() {
-    console.log(1111)
     useEffect(()=>{
-        console.log('home')
         if (typeof window !== "undefined") {
-            console.log(window)
             const {WOW} = require('wowjs');
-            console.log(WOW)
             if(WOW){
                 let wow = new WOW(
                     {
