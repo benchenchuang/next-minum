@@ -4,7 +4,6 @@ import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import SiteNavbar from '@/components/SiteNavbar';
 import SiteFooter from '@/components/SiteFooter';
-import '@/styles/animate.css'
 
 export const metadata: Metadata = {
     title: {
@@ -21,7 +20,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className='light'>
-            <body>
+            <head>
+                <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css"/>
+            </head>
+            <body className='site_wrapper'>
                 <SiteNavbar />
                 <Providers>
                     {children}

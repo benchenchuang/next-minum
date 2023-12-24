@@ -3,6 +3,7 @@ import HomeSwiper from '@/components/HomeSwiper'
 import { Button } from '@nextui-org/react'
 import { WOW } from 'wowjs'
 import { useEffect } from 'react'
+import './animate.css'
 
 export default function Home() {
     useEffect(()=>{
@@ -33,7 +34,7 @@ export default function Home() {
             <div style={{ height: '300px' }}>
 
             </div>
-            <section className="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">ssssss</section>
+            <section className="wow slideInLeft">ssssss</section>
             <section className="wow slideInRight">dddddd</section>
         </div>
     )
