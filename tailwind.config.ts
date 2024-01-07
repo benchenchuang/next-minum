@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 13:49:47
+ * @LastEditTime: 2024-01-07 16:00:36
  * @FilePath: /minum-website/tailwind.config.ts
  */
 import {nextui} from "@nextui-org/react";
@@ -26,6 +26,7 @@ const config: Config = {
         extend: {
             colors:{
                 'site-primary':'#153E8B',
+                'sub-primary':'#6387C9',
                 'site-gray':'#888888'
             },
             backgroundImage:{
