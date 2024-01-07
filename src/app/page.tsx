@@ -1,5 +1,11 @@
+/*
+ * @Author: Jimmy
+ * @LastModifiedBy: Jimmy
+ * @Date: 2023-12-23 22:15:45
+ * @LastEditTime: 2024-01-07 11:17:05
+ * @FilePath: /minum-website/src/app/page.tsx
+ */
 "use client"
-import HomeSwiper from '@/components/HomeSwiper'
 import { Button } from '@nextui-org/react'
 // @ts-ignore
 import { useEffect } from 'react'
@@ -11,15 +17,8 @@ export default function Home() {
         wowInit()
     },[])
     return (
-        <div style={{ height: '2000px', marginTop: '-3rem' }}>
-            <HomeSwiper />
-            <Button
-                disableRipple
-                className="relative overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
-                size="lg"
-            >
-                Press me
-            </Button>
+        <div style={{ height: '2000px', marginTop: '-3rem',background:'#f00' }}>
+            
             <div style={{ height: '300px' }}>
 
             </div>

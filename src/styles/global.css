@@ -5,3 +5,6 @@
     width: 100vw;
     overflow-x: hidden;
 }
+:root{
+    font-family:'italic',"Noto Sans", "Helvetica Neue",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

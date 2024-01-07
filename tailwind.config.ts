@@ -1,3 +1,10 @@
+/*
+ * @Author: Jimmy
+ * @LastModifiedBy: Jimmy
+ * @Date: 2023-12-23 22:15:45
+ * @LastEditTime: 2024-01-07 12:20:59
+ * @FilePath: /minum-website/tailwind.config.ts
+ */
 import {nextui} from "@nextui-org/react";
 import type { Config } from 'tailwindcss'
 
@@ -9,12 +16,22 @@ const config: Config = {
         "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
     ],
     theme: {
+        screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1200px',
+            '2xl': '1536px',
+        },
         extend: {
-            backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-conic':
-                    'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            colors:{
+                'site-primary':'#153E8B',
+                'site-gray':'#888888'
             },
+            backgroundImage:{
+                "navbar-gradient": "linear-gradient(90deg, rgba(13, 24, 66, 0.7) 0%, rgba(3, 13, 65, 0.5) 100%)",
+                'light-bg':'#F5F8FC'
+            }
         },
     },
     darkMode: "class",
