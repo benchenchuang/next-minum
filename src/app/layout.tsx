@@ -2,11 +2,12 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 15:24:28
+ * @LastEditTime: 2024-01-07 20:43:58
  * @FilePath: /minum-website/src/app/layout.tsx
  */
 import type { Metadata } from 'next'
 import '@/styles/global.css'
+import '@/styles/animate.css'
 import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import SiteNavbar from '@/components/SiteNavbar';

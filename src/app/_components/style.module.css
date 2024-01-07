@@ -1,0 +1,38 @@
+.structure,
+.company,
+.leak,
+.global,
+.ai{
+    color: #353535;
+    transition: all .7s ease;
+}
+.structure:hover{
+    animation: backgroundAnimation .5s linear;
+    color: #fff;
+    background-image: url('/images/home/structure_bg.png');
+}
+.company:hover{
+    color: #fff;
+    animation: backgroundAnimation .5s linear;
+    background-image: url('/images/home/structure_bg.png');
+}
+.leak:hover{
+    color: #fff;
+    animation: backgroundAnimation .5s linear;
+    background-image: url('/images/home/structure_bg.png');
+}
+.global:hover{
+    color: #fff;
+    animation: backgroundAnimation .5s linear;
+    background-image: url('/images/home/structure_bg.png');
+}
+.ai:hover{
+    color: #fff;
+    animation: backgroundAnimation .5s linear;
+    background-image: url('/images/home/structure_bg.png');
+}
+
+@keyframes backgroundAnimation {
+    0% { opacity: 0.4;}
+    100% { opacity: 1;}
+  }
