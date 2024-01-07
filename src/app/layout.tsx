@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 13:16:59
+ * @LastEditTime: 2024-01-07 15:24:28
  * @FilePath: /minum-website/src/app/layout.tsx
  */
 import type { Metadata } from 'next'
@@ -11,6 +11,7 @@ import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import SiteNavbar from '@/components/SiteNavbar';
 import SiteFooter from '@/components/SiteFooter';
+import BackTop from '@/components/BackTop';
 
 export const metadata: Metadata = {
     title: {
@@ -25,18 +26,20 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+    
     return (
         <html lang="zh-cn" className='light'>
             <head>
-                <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css"/>
+                <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" />
             </head>
             <body className='site_wrapper'>
                 <SiteNavbar />
                 <Providers>
-                    <div className='sm:-mt-12 md:-mt-20'>
+                    <div className='sm:-mt-10 md:-mt-20'>
                         {children}
                     </div>
                 </Providers>
+                <BackTop />
                 <SiteFooter />
             </body>
         </html>

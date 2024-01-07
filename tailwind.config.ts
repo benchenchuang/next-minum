@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 13:20:00
+ * @LastEditTime: 2024-01-07 13:49:47
  * @FilePath: /minum-website/tailwind.config.ts
  */
 import {nextui} from "@nextui-org/react";
@@ -29,7 +29,7 @@ const config: Config = {
                 'site-gray':'#888888'
             },
             backgroundImage:{
-                "navbar-gradient": "linear-gradient(90deg, rgba(13, 24, 66, 0.7) 0%, rgba(3, 13, 65, 0.5) 100%)",
+                "navbar-gradient": "linear-gradient(90deg, rgba(13, 24, 66, 0.5) 0%, rgba(3, 13, 65, 0.4) 100%)",
                 "navbar-active":"linear-gradient(0, #0049D1 0%, rgba(72, 122, 217, 0.2) 100%)",
                 'light-bg':'#F5F8FC'
             }

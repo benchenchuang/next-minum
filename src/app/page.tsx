@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 11:17:05
+ * @LastEditTime: 2024-01-07 15:28:58
  * @FilePath: /minum-website/src/app/page.tsx
  */
 "use client"
@@ -20,9 +20,7 @@ export default function Home() {
     return (
         <div>
             <BannerShow/>
-            <div style={{ height: '300px' }}>
-
-            </div>
+            <div style={{height:'400px'}}></div>
             <section className="wow slideInLeft">ssssss</section>
             <section className="wow slideInRight">dddddd</section>
         </div>
