@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-07 18:19:42
+ * @LastEditTime: 2024-01-07 19:54:32
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
@@ -17,7 +17,7 @@ const mobileMenus = [
                 path:'tel:18112304808'
             },
             {
-                name:'电话：18112304808',
+                name:'手机：18112304808',
                 path:'tel:18112304808'
             },
             {
