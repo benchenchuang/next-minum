@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-07 12:22:39
+ * @LastEditTime: 2024-01-07 13:16:59
  * @FilePath: /minum-website/src/app/layout.tsx
  */
 import type { Metadata } from 'next'
@@ -33,7 +33,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className='site_wrapper'>
                 <SiteNavbar />
                 <Providers>
-                    {children}
+                    <div className='sm:-mt-12 md:-mt-20'>
+                        {children}
+                    </div>
                 </Providers>
                 <SiteFooter />
             </body>

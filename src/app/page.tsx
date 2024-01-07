@@ -11,14 +11,15 @@ import { Button } from '@nextui-org/react'
 import { useEffect } from 'react'
 import '../styles/animate.css'
 import { wowInit } from '@/utils/wow-init'
+import BannerShow from '@/components/BannerShow'
 
 export default function Home() {
     useEffect(()=>{
         wowInit()
     },[])
     return (
-        <div style={{ height: '2000px', marginTop: '-3rem',background:'#f00' }}>
-            
+        <div>
+            <BannerShow/>
             <div style={{ height: '300px' }}>
 
             </div>
