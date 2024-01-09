@@ -14,8 +14,8 @@ const ProductIntroduction = () => {
                 {/* 密数云 */}
                 <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] md:mx-[20px] lg:mx-0'>
                     <div className='flex-col flex-1 md:mr-[50px] tracking-[3px]'>
-                        <Image src="/images/home/msy_logo.png" alt="密数云"/>
-                        <h3 className='border-l-[6px] border-[#153E8B] sm:leading-[18px] md:leading-[26px] text-[#333] mt-[40px] sm:text-[20px] md:text-[30px] font-[500] pl-[10px]'>密数云</h3>
+                        <Image className='sm:w-[92px] md:w-[124px]' src="/images/home/msy_logo.svg" alt="密数云"/>
+                        <h3 className='border-l-[6px] border-[#153E8B] sm:leading-[18px] md:leading-[26px] text-[#333] sm:mt-[20px] md:mt-[40px] sm:text-[20px] md:text-[30px] font-[500] pl-[10px]'>密数云</h3>
                         <div className='text-[#666] font-[400] sm:text-[14px] md:text-[18px]'>
                             <div className='mt-[20px]'>
                                 <h4 className='font-[500]'>针对传统安全解决方案的缺陷：</h4>
@@ -30,6 +30,28 @@ const ProductIntroduction = () => {
                     <Image className='flex-1' src="/images/home/msy.png" alt="密数云产品优势"/>
                 </div>
                 {/* 密数四库 */}
+                <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] items-end md:mx-[20px] lg:mx-0'>
+                    <div className='flex-col md:mr-[50px] tracking-[3px] lg:max-w-[503px]'>
+                        <Image className='sm:w-[88px] md:w-[136px]' src="/images/home/mssk_logo.svg" alt="密数四库"/>
+                        <h3 className='border-l-[6px] border-[#153E8B] sm:leading-[18px] md:leading-[26px] text-[#333] sm:mt-[20px] md:mt-[40px] sm:text-[20px] md:text-[30px] font-[500] pl-[10px]'>密数四库</h3>
+                        <div className='text-[#666] font-[400] sm:text-[14px] md:text-[18px]'>
+                            <div className='mt-[20px] sm:text-[10px] md:text-[16px] text-center leading-[32px] text-[#666] grid grid-cols-2 grid-flow-row gap-4'>
+                                <p className='border rounded-[5px] border-[#666666]'>为企业提供精准的数据服务</p>
+                                <p className='border rounded-[5px] border-[#666666]'>数据资产的精细化管理</p>
+                                <p className='border rounded-[5px] border-[#666666]'>减少数据安全风险</p>
+                                <p className='border rounded-[5px] border-[#666666]'>规范安全防护措施</p>
+                                <p className='border rounded-[5px] border-[#666666]'>促进数据开放共享</p>
+                                <p className='border rounded-[5px] border-[#666666]'>厘清数据资产</p>
+                            </div>
+                            <div className='sm:mt-[15px] md:mt-[30px]'>
+                                <p className='mt-[5px]'><span className='font-[500]'>效率：</span>算法可以快速、准确地处理大量数据，而人工分类分级通常需要花费更多的时间和人力。</p>
+                                <p className='mt-[5px]'><span className='font-[500]'>准确性：</span>算法基于预设规则和模式进行分类分级，可以减少人为错误和偏见，提高准确性。</p>
+                                <p className='mt-[5px]'><span className='font-[500]'>可扩展性：</span>随着数据量的增加，算法可以自动适应并扩展分类分级的规模，而不需要增加人力成本。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <Image className='flex-1' src="/images/home/mssk.png" alt="密数四库优点"/>
+                </div>
             </div>
         </div>
     )
