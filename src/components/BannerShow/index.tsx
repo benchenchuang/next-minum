@@ -2,11 +2,12 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 13:08:46
- * @LastEditTime: 2024-01-07 15:14:48
+ * @LastEditTime: 2024-01-09 20:59:29
  * @FilePath: /minum-website/src/components/BannerShow/index.tsx
  */
 import React from 'react'
 import { Image } from "@nextui-org/react";
+import { wowInit } from '@/utils/wow-init';
 
 export type BannerType = {
     bgColor?: string
@@ -15,7 +16,7 @@ export type BannerType = {
     subTitle?: string
     description?: string
 }
-
+wowInit()
 const BannerShow = (props: BannerType) => {
     let {
         bgColor = '#0d1943',
@@ -29,20 +30,20 @@ const BannerShow = (props: BannerType) => {
             <div className='absolute z-10 h-full flex items-center'>
                 <div className={`banner_text_box ${textColor} text-center max-w-[1200px]`}>
                     {
-                        title && <h2 className='title sm:text-[20px] md:text-[50px] xl:text-[80px] font-[700] sm:tracking-[5px] md:tracking-[20px]'>{title}</h2>
+                        title && <h2 className='wow fadeInDown title sm:text-[20px] md:text-[50px] xl:text-[80px] font-[700] sm:tracking-[5px] md:tracking-[20px]'>{title}</h2>
                     }
                     {
-                        subTitle && <h3 className="slogan sm:text-[12px] md:text-[24px] xl:text-[36px] font-[500] sm:mt-1 md:mt-7 sm:tracking-[5px] md:tracking-[20px]">{subTitle}</h3>
+                        subTitle && <h3 className="wow fadeInLeft slogan sm:text-[12px] md:text-[24px] xl:text-[36px] font-[500] sm:mt-1 md:mt-7 sm:tracking-[5px] md:tracking-[20px]">{subTitle}</h3>
                     }
                     {
-                        description && <p className="description p-1 sm:text-[10px] md:text-[18px] xl:text-[24px] font-[300] sm:mt-2 md:mt-14 sm:tracking-[2px] md:tracking-[5px]">{description}</p>
+                        description && <p className="wow fadeInUp description p-1 sm:text-[10px] md:text-[18px] xl:text-[24px] font-[300] sm:mt-2 md:mt-14 sm:tracking-[2px] md:tracking-[5px]">{description}</p>
                     }
                 </div>
             </div>
             <Image
                 className="max-h-[909px] rounded-none z-0"
                 src='/images/common/banner_bg.png'
-                alt='大道云隐-新一代数据资产安全保护引领者'></Image>
+                alt={title + '-' + subTitle}></Image>
         </div>
     )
 }

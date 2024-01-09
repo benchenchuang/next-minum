@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-07 19:54:32
+ * @LastEditTime: 2024-01-09 22:11:31
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
@@ -74,7 +74,7 @@ const Footer = () => {
     return (
         <div className='bg-site-primary w-full justify-center flex'>
             <div className='w-[1280px] sm:pt-[40px] pt-[80px] pb-[20px] sm:px-2 box-border'>
-                <div className='flex flex-row sm:px-[20px] md:px-0 sm:items-center mb-[100px] sm:mb-[30px]'>
+                <div className='flex flex-row md:items-start sm:px-[20px] md:px-0 sm:items-center mb-[100px] sm:mb-[30px]'>
                     <div className='md:mr-10 lg:mr-20'>
                         <Image
                             width={150}
@@ -128,7 +128,7 @@ const Footer = () => {
                         }
                     </div>
                     
-                    <div className='code_box md:pl-[30px] md:mx-[10px] lg:pl-[70px] lg:mx-[20px] sm:pt-[20px] sm:w-[100px] md:w-[120px] lg:w-[180px] sm:border-none md:border-solid box-border border-l-[1px] border-[#D5DBE6] border-opacity-30'>
+                    <div className='code_box md:pl-[30px] md:mx-[10px] lg:pl-[70px] sm:w-[100px] md:w-[120px] lg:w-[180px] sm:border-none md:border-solid box-border border-l-[1px] border-[#D5DBE6] border-opacity-30'>
                         <Image className='rounded-none' src='/images/common/wx-code.png' alt='大道云隐公众哈'/>
                         <p className='mt-[8px] sm:text-[12px] md:text-[14px] text-center text-white font-[300]'>扫描二维码关注微信公众平台</p>
                     </div>

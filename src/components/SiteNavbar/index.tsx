@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:38:09
- * @LastEditTime: 2024-01-07 15:13:52
+ * @LastEditTime: 2024-01-09 21:16:58
  * @FilePath: /minum-website/src/components/SiteNavbar/index.tsx
  */
 'use client';
@@ -58,7 +58,7 @@ const SiteNavbar = () => {
                     <NavbarBrand>
                         <Link href='/'>
                             <Image
-                                width={60}
+                                width={69}
                                 alt="大道云隐"
                                 src="/images/common/logo.png"
                             />

@@ -2,11 +2,10 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 18:59:52
- * @LastEditTime: 2024-01-07 20:53:40
+ * @LastEditTime: 2024-01-09 21:11:50
  * @FilePath: /minum-website/src/app/_components/home_summarize.tsx
  */
 import React from 'react'
-import { Image } from '@nextui-org/react'
 import styles from './style.module.css'
 import { wowInit } from '@/utils/wow-init'
 const headData = [
@@ -54,12 +53,12 @@ const HomeSummarize = () => {
     // },[])
   return (
     <div className='bg-block-light relative w-full flex flex-col items-center'>
-        <div className='max-w-[1200px] relative z-10 py-[100px] flex flex-row gap-1'>
+        <div className='max-w-[1200px] relative z-10 py-[100px] flex  sm:flex-col md:flex-row gap-1'>
             {
                 headData.map((head,index)=>{
                     return(
                         <div 
-                            className={`wow slideInLeft bg-block-grey relative text-white  px-[50px] py-[30px] flex-[360px] ${styles[head.class]}`}
+                            className={`wow slideInLeft bg-block-grey relative text-white  px-[50px] py-[30px] sm:w-full md:flex-[360px] ${styles[head.class]}`}
                             key={index}>
                             <img
                                 className='absolute right-[21px] top-[27px] max-w-[88px] z-10'
@@ -73,11 +72,11 @@ const HomeSummarize = () => {
                 })
             }
             
-            <div className='flex flex-row flex-wrap gap-1'>
+            <div className='flex sm:flex-col md:flex-row flex-wrap gap-1'>
                 {
                     dataList.map((item,index)=>{
                         return(
-                            <div className={`wow slideInRight bg-block-grey relative text-[#353535] text-right px-[40px] py-[20px] flex-[415px] ${styles[item.class]}`} key={index}>
+                            <div className={`wow slideInRight bg-block-grey relative text-[#353535] text-right px-[40px] py-[20px] sm:w-full md:flex-[300px] lg:flex-[415px] ${styles[item.class]}`} key={index}>
                                 <p className='text-[36px]'>{item.num}</p>
                                 <p className='text-[20px] mt-[30px]'>{item.name}</p>
                                 <p className='text-[14px] text-[#7C90A3] mt-[17px]'>数据来源{item.from}</p>

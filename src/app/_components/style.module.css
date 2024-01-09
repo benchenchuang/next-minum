@@ -14,22 +14,22 @@
 .company:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
-    background-image: url('/images/home/structure_bg.png');
+    background-image: url('/images/home/company_bg.png');
 }
 .leak:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
-    background-image: url('/images/home/structure_bg.png');
+    background-image: url('/images/home/leak_bg.png');
 }
 .global:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
-    background-image: url('/images/home/structure_bg.png');
+    background-image: url('/images/home/global_bg.png');
 }
 .ai:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
-    background-image: url('/images/home/structure_bg.png');
+    background-image: url('/images/home/ai_bg.png');
 }
 
 @keyframes backgroundAnimation {
