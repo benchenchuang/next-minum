@@ -2,9 +2,10 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 13:08:46
- * @LastEditTime: 2024-01-09 20:59:29
+ * @LastEditTime: 2024-01-09 22:33:08
  * @FilePath: /minum-website/src/components/BannerShow/index.tsx
  */
+'use client'
 import React from 'react'
 import { Image } from "@nextui-org/react";
 import { wowInit } from '@/utils/wow-init';
