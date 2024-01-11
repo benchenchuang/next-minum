@@ -10,29 +10,34 @@
     animation: backgroundAnimation .5s linear;
     color: #fff;
     background-image: url('/images/home/structure_bg.png');
+    background-size: cover;
 }
 .company:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
     background-image: url('/images/home/company_bg.png');
+    background-size: cover;
 }
 .leak:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
     background-image: url('/images/home/leak_bg.png');
+    background-size: cover;
 }
 .global:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
     background-image: url('/images/home/global_bg.png');
+    background-size: cover;
 }
 .ai:hover{
     color: #fff;
     animation: backgroundAnimation .5s linear;
     background-image: url('/images/home/ai_bg.png');
+    background-size: cover;
 }
 
 @keyframes backgroundAnimation {
     0% { opacity: 0.4;}
     100% { opacity: 1;}
-  }
+}
