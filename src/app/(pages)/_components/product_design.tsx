@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-11 21:10:19
- * @LastEditTime: 2024-01-12 20:27:09
+ * @LastEditTime: 2024-01-12 20:52:08
  * @FilePath: /minum-website/src/app/(pages)/_components/product_design.tsx
  */
 'use client'
@@ -56,7 +56,7 @@ const ProductDesign = () => {
                     {
                         designList.map((item,key)=>{
                             return (
-                                <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center mx-[20px] sm:border sm:border-[#153e8b] md:border-0 sm:mb-[20px] sm:py-[15px] sm:rounded-[10px]`} onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem('')} key={key}>
+                                <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center mx-[20px] sm:border sm:border-[#153e8b] md:border-0 sm:mb-[20px] sm:py-[15px] sm:rounded-[10px]`} onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem(-1)} key={key}>
                                     <div className={`sm:h-[88px] md:h-[108px] lg:h-[118px] ${key===activeKey && 'animate-bounceOne'}`}>
                                         <Image src={item.icon} alt='大道云隐-当前痛点' />
                                     </div>
