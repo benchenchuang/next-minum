@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-12 20:54:35
+ * @LastEditTime: 2024-01-12 22:51:14
  * @FilePath: /minum-website/src/app/page.tsx
  */
 import type { Metadata } from 'next'
@@ -17,6 +17,7 @@ import HomeSummarize from './(pages)/_components/home_summarize';
 import ProductIntroduction from './(pages)/_components/product_introduction';
 import ProductDesign from './(pages)/_components/product_design';
 import DataSafe from './(pages)/_components/data-safe';
+import DataModule from './(pages)/_components/data-module';
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 <ProductIntroduction />
                 <ProductDesign />
                 <DataSafe/>
+                <DataModule/>
             </div>
             <BackTop />
             <SiteFooter />
