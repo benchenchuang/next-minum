@@ -2,11 +2,12 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-12 22:50:52
- * @LastEditTime: 2024-01-12 23:05:28
+ * @LastEditTime: 2024-01-12 23:08:07
  * @FilePath: /minum-website/src/app/(pages)/_components/data-module.tsx
  */
-import BlockHeader from '@/components/BlockHeader'
 import React from 'react'
+import BlockHeader from '@/components/BlockHeader'
+import { Image } from "@nextui-org/react";
 
 const DataModule = () => {
     let header = {
@@ -21,7 +22,7 @@ const DataModule = () => {
     return (
         <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative'>
             <BlockHeader {...header} />
-            <div className='max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+            <div className='relative z-10 max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
                 {
                     moduleList.map((item,key)=>{
                         return (
@@ -31,6 +32,9 @@ const DataModule = () => {
                         )
                     })
                 }
+            </div>
+            <div className='absolute left-0 bottom-0 z-0 right-0 w-screen'>
+                <Image src="/images/home/module_bg.png" alt="大道云隐-模块" />
             </div>
         </div>
     )

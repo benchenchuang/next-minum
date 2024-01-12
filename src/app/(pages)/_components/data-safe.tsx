@@ -37,7 +37,7 @@ const DataSafe = () => {
         }
     ]
     return (
-        <div className='bg-[#fff] sm:py-[50px] md:py-[100px] relative'>
+        <div className='bg-[#fff] relative sm:py-[50px] md:py-[100px]'>
             <BlockHeader {...header} />
             <div className='max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {
