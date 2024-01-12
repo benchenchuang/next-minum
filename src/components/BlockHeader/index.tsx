@@ -6,7 +6,7 @@
  * @FilePath: /minum-website/src/components/BlockHeader/index.tsx
  */
 import React from 'react'
-import { wowInit } from '@/utils/wow-init'
+import { wowInit } from '@/libs/wow-init'
 
 wowInit()
 const CommonHeader = (props: any) => {

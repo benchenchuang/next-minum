@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 21:04:28
- * @LastEditTime: 2024-01-07 10:58:33
+ * @LastEditTime: 2024-01-12 19:54:53
  * @FilePath: /minum-website/src/config/site.ts
  */
 export type SiteConfig = typeof siteConfig;
@@ -17,10 +17,12 @@ export const siteConfig = {
     keywords: "数据安全，自研产品，数据泄露"
 }
 
+export const Home = '/home';
+
 export const menuList:MenuItem[] = [
     {
         name: "首页",
-        path: '/'
+        path: '/home'
     },
     {
         name: "产品介绍",

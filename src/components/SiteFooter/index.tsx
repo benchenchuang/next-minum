@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-09 22:11:31
+ * @LastEditTime: 2024-01-12 19:55:28
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
@@ -138,9 +138,6 @@ const Footer = () => {
                     <Link className='color-sub-primary sm:text-[12px] md:text-[14px] flex justify-center flex-1' href='https://beian.miit.gov.cn/'>苏ICP备2022041720号-1</Link>
                 </div>
             </div>
-
-            {/* <div className='hidden sm:flex'>pc - Footer</div>
-            <div className='sm:hidden'>phone-Footer-test</div> */}
         </div>
     )
 }

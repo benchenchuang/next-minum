@@ -8,7 +8,7 @@
 'use client'
 import React from 'react'
 import { Image } from "@nextui-org/react";
-import { wowInit } from '@/utils/wow-init';
+import { wowInit } from '@/libs/wow-init';
 
 export type BannerType = {
     bgColor?: string

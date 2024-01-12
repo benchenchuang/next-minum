@@ -7,7 +7,7 @@
  */
 import React from 'react'
 import styles from './style.module.css'
-import { wowInit } from '@/utils/wow-init'
+import { wowInit } from '@/libs/wow-init'
 const headData = [
     {
         num:'90%',

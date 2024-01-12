@@ -2,14 +2,14 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:38:09
- * @LastEditTime: 2024-01-09 21:16:58
+ * @LastEditTime: 2024-01-12 19:55:14
  * @FilePath: /minum-website/src/components/SiteNavbar/index.tsx
  */
 'use client';
 import React, { useEffect, useState } from 'react'
 import { Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import { usePathname } from 'next/navigation';
-import { MenuItem, menuList } from '@/config/site';
+import { Home, MenuItem, menuList } from '@/config/site';
 
 const SiteNavbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -45,7 +45,7 @@ const SiteNavbar = () => {
                 {/* pc端 */}
                 <NavbarContent className="hidden md:flex">
                     <NavbarBrand>
-                        <Link href='/'>
+                        <Link href={Home}>
                             <Image
                                 width={132}
                                 alt="大道云隐"
@@ -56,7 +56,7 @@ const SiteNavbar = () => {
                 </NavbarContent>
                 <NavbarContent className="md:hidden">
                     <NavbarBrand>
-                        <Link href='/'>
+                        <Link href={Home}>
                             <Image
                                 width={69}
                                 alt="大道云隐"
