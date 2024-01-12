@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-12 20:32:45
- * @LastEditTime: 2024-01-12 22:42:54
+ * @LastEditTime: 2024-01-12 23:06:03
  * @FilePath: /minum-website/src/app/(pages)/_components/data-safe.tsx
  */
 import React from 'react'
@@ -43,7 +43,7 @@ const DataSafe = () => {
                 {
                     introList.map((item,key)=>{
                         return (
-                            <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center py-[50px] border-white border-b-5 transition hover:border-[#153e8b] hover:bg-card-module `}key={key}>
+                            <div className={`wow fadeInUp cursor-pointer text-center flex flex-col items-center py-[50px] border-white border-b-5 transition hover:border-[#153e8b] hover:bg-card-module `}key={key}>
                                 <div className={`sm:h-[88px] md:h-[108px] lg:h-[118px]}`}>
                                     <Image src={item.icon} alt='大道云隐-数据安全管理' />
                                 </div>
