@@ -2,8 +2,8 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-11 21:10:19
- * @LastEditTime: 2024-01-11 23:03:42
- * @FilePath: /minum-website/src/app/_components/product_design.tsx
+ * @LastEditTime: 2024-01-12 20:27:09
+ * @FilePath: /minum-website/src/app/(pages)/_components/product_design.tsx
  */
 'use client'
 import React, { useState } from 'react'
@@ -45,30 +45,29 @@ const ProductDesign = () => {
     ]
 
     const focusItem = (key:number)=>{
-        console.log(key)
         setActiveKey(key)
     }
 
     return (
         <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative'>
             <BlockHeader {...header} />
-            <div className='max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px]'>
-                <div className='grid grid-cols-5 gap-4 pr-12'>
+            <div className='relative max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px]'>
+                <div className='md:absolute md:left-4 lg:left-5 md:top-32 lg:top-40 z-10 grid sm:grid-cols-1 md:grid-cols-5 md:gap-6 lg:gap-7 md:pr-12'>
                     {
                         designList.map((item,key)=>{
                             return (
-                                <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center mx-[20px]`} onMouseEnter={()=>focusItem(key)} key={key}>
-                                    <div className={`h-[118px] ${key==activeKey && 'animate-bounceOne'}`}>
+                                <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center mx-[20px] sm:border sm:border-[#153e8b] md:border-0 sm:mb-[20px] sm:py-[15px] sm:rounded-[10px]`} onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem('')} key={key}>
+                                    <div className={`sm:h-[88px] md:h-[108px] lg:h-[118px] ${key===activeKey && 'animate-bounceOne'}`}>
                                         <Image src={item.icon} alt='大道云隐-当前痛点' />
                                     </div>
-                                    <h3 className='text-[#153E8B] mt-[20px] text-[20px] font-[500]'>{item.name}</h3>
-                                    <p className='text-[#666] mt-[30px] text-[18px] font-[400]' dangerouslySetInnerHTML={{__html: item.detail}}></p>
+                                    <h3 className='text-[#153E8B] mt-[20px] md:text-[14px] lg:text-[20px] font-[500]'>{item.name}</h3>
+                                    <p className='text-[#666] md:mt-[20px] lg:mt-[30px] md:text-[11px] lg:text-[17px] font-[400]' dangerouslySetInnerHTML={{__html: item.detail}}></p>
                                 </div>
                             )
                         })
                     }
                 </div>
-                <Image src='/images/home/design_module_bg.png' alt='大道云隐-当前痛点' />
+                <Image className='sm:hidden md:flex relative z-0' src='/images/home/design_module_bg.png' alt='大道云隐-当前痛点' />
             </div>
             <div className='absolute left-0 bottom-0 right-0 w-screen'>
                 <Image src="/images/home/design_bg.png" alt="大道云隐-当前痛点" />
