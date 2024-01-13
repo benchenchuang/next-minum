@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 13:08:46
- * @LastEditTime: 2024-01-11 21:56:28
+ * @LastEditTime: 2024-01-13 22:08:31
  * @FilePath: /minum-website/src/components/BannerShow/index.tsx
  */
 'use client'
@@ -15,18 +15,20 @@ export type BannerType = {
     textColor?: string
     title?: string
     subTitle?: string
-    isImage?: boolean
+    imagePath?: string
+    videoPath?: string
     description?: string
 }
 wowInit()
 const BannerShow = (props: BannerType) => {
     let {
-        bgColor = '#0d1943',
-        textColor = 'text-white',
-        title = '大道云隐',
-        subTitle = '新一代数据资产安全保护引领者',
-        isImage = true,
-        description = '新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障'
+        bgColor = '',
+        textColor = '',
+        title = '',
+        subTitle = '',
+        imagePath = '',
+        videoPath = '',
+        description = '',
     } = props;
     return (
         <div className='relative flex justify-center' style={{ backgroundColor: bgColor }}>
@@ -44,11 +46,14 @@ const BannerShow = (props: BannerType) => {
                 </div>
             </div>
             {
-                isImage ? (<Image
+                imagePath && (<Image
                     className="max-h-[909px] rounded-none z-0"
-                    src='/images/common/banner_bg.png'
-                    alt={title + '-' + subTitle}></Image>) : (
-                    <video className="max-h-[909px] rounded-none z-1" preload="auto" loop autoPlay muted src='/minum.mp4'></video>
+                    src={imagePath}
+                    alt={title + '-' + subTitle}></Image>)
+            }
+            {
+                videoPath && (
+                    <video className="max-h-[909px] rounded-none z-1" preload="auto" loop autoPlay muted src={videoPath}></video>
                 )
             }
 
