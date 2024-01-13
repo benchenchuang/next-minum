@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 18:59:52
- * @LastEditTime: 2024-01-13 21:00:09
+ * @LastEditTime: 2024-01-13 21:02:36
  * @FilePath: /minum-website/src/app/(pages)/_components/home_summarize.tsx
  */
 import React from 'react'
@@ -49,8 +49,6 @@ const dataList = [
 
 wowInit()
 const HomeSummarize = () => {
-    // useEffect(()=>{
-    // },[])
   return (
     <div className='bg-block-light relative w-full flex flex-col items-center'>
         <div className='max-w-[1200px] sm:px-[10px] relative z-10 sm:py-[40px] md:py-[100px] flex  sm:flex-col md:flex-row gap-1'>
