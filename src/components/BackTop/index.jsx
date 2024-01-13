@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 15:23:15
- * @LastEditTime: 2024-01-13 18:36:37
+ * @LastEditTime: 2024-01-13 18:47:41
  * @FilePath: /minum-website/src/components/BackTop/index.jsx
  */
 'use client';
@@ -33,7 +33,7 @@ const BackTop = () => {
                 <Button
                     disableRipple
                     onClick={scrollToTop}
-                    className="fixed bottom-12 right-6 overflow-visible rounded-full px-unit-0 min-w-unit-12 hover:-translate-y-1 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
+                    className="fixed z-50 bottom-12 right-6 overflow-visible rounded-full px-unit-0 min-w-unit-12 hover:-translate-y-1 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
                     size="lg"
                 >
                     <Image
