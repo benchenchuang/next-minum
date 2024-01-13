@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import BlockHeader from '@/components/BlockHeader'
 import { Image } from "@nextui-org/react";
 import { Pagination,Autoplay,EffectCoverflow } from 'swiper/modules';
@@ -8,8 +8,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import "swiper/css/effect-fade"
+import { useSearchParams } from 'next/navigation';
 
 const ProductIntroduction = () => {
+    const searchParams = useSearchParams()
+    const swiperRef:any = useRef();
+    useEffect(()=>{
+        let type = searchParams.get('type');
+        if(type=='mssk'){
+            swiperRef.current.swiper.slideTo(1)
+        }else{
+            swiperRef.current.swiper.slideTo(0)
+        }
+    },[searchParams])
+    
     let header = {
         title: '产品介绍',
         en_title: 'Product Introduction'
@@ -19,6 +31,7 @@ const ProductIntroduction = () => {
             <BlockHeader {...header} />
             <div className='max-w-[1200px] mx-auto sm:pt-[30px] md:pt-[70px]'>
                 <Swiper
+                    ref={swiperRef}
                     modules={[Pagination]}
                     slidesPerView={1}
                     style={{paddingBottom:'30px'}}

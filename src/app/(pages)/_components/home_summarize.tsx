@@ -2,8 +2,8 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 18:59:52
- * @LastEditTime: 2024-01-11 20:45:45
- * @FilePath: /minum-website/src/app/_components/home_summarize.tsx
+ * @LastEditTime: 2024-01-13 21:00:09
+ * @FilePath: /minum-website/src/app/(pages)/_components/home_summarize.tsx
  */
 import React from 'react'
 import styles from './style.module.css'
@@ -53,7 +53,7 @@ const HomeSummarize = () => {
     // },[])
   return (
     <div className='bg-block-light relative w-full flex flex-col items-center'>
-        <div className='max-w-[1200px] sm:px-[10px] relative z-10 py-[100px] flex  sm:flex-col md:flex-row gap-1'>
+        <div className='max-w-[1200px] sm:px-[10px] relative z-10 sm:py-[40px] md:py-[100px] flex  sm:flex-col md:flex-row gap-1'>
             {
                 headData.map((head,index)=>{
                     return(
