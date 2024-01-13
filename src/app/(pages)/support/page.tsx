@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 10:51:09
- * @LastEditTime: 2024-01-13 23:05:03
+ * @LastEditTime: 2024-01-13 23:17:25
  * @FilePath: /minum-website/src/app/(pages)/support/page.tsx
  */
 import React from 'react'
