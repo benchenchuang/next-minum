@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-12 19:55:28
+ * @LastEditTime: 2024-01-13 11:10:33
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className='bg-site-primary w-full justify-center flex'>
             <div className='w-[1280px] sm:pt-[40px] pt-[80px] pb-[20px] sm:px-2 box-border'>
                 <div className='flex flex-row md:items-start sm:px-[20px] md:px-0 sm:items-center mb-[100px] sm:mb-[30px]'>
-                    <div className='md:mr-10 lg:mr-20'>
+                    <div className='md:mr-10 xl:mr-20'>
                         <Image
                             width={150}
                             className='hidden lg:flex'
@@ -98,7 +98,7 @@ const Footer = () => {
                                         {
                                             item.children.map(child=>{
                                             return <Link
-                                                className='text-[#D5DBE6] md:text-[12px] lg:text-[14px] mt-[20px] font-[400]'
+                                                className='text-[#D5DBE6] md:text-[11px] xl:text-[14px] mt-[20px] font-[400]'
                                                 href={child.path}
                                                 key={child.name}>{child.name}</Link>
                                             })
@@ -128,9 +128,9 @@ const Footer = () => {
                         }
                     </div>
                     
-                    <div className='code_box md:pl-[30px] md:mx-[10px] lg:pl-[70px] sm:w-[100px] md:w-[120px] lg:w-[180px] sm:border-none md:border-solid box-border border-l-[1px] border-[#D5DBE6] border-opacity-30'>
+                    <div className='code_box md:pl-[20px] md:mx-[10px] lg:pl-[50px] xl:pl-[70px] sm:w-[100px] md:w-[110px] lg:w-[160px] xl:w-[180px] sm:border-none md:border-solid box-border border-l-[1px] border-[#D5DBE6] border-opacity-30'>
                         <Image className='rounded-none' src='/images/common/wx-code.png' alt='大道云隐公众哈'/>
-                        <p className='mt-[8px] sm:text-[12px] md:text-[14px] text-center text-white font-[300]'>扫描二维码关注微信公众平台</p>
+                        <p className='mt-[8px] sm:text-[12px] md:text-[12px] lg:text-[14px] text-center text-white font-[300]'>扫描二维码关注微信公众平台</p>
                     </div>
                 </div>
                 <div className='sm:flex-col md:flex-row flex w-full items-center'>

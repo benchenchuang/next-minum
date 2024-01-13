@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-11 21:10:19
- * @LastEditTime: 2024-01-13 10:49:25
+ * @LastEditTime: 2024-01-13 11:11:20
  * @FilePath: /minum-website/src/app/(pages)/_components/product_design.tsx
  */
 'use client'
@@ -49,7 +49,7 @@ const ProductDesign = () => {
     }
 
     return (
-        <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative'>
+        <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative w-screen overflow-x-hidden'>
             <BlockHeader {...header} />
             <div className='relative max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px]'>
                 <div className='md:absolute md:left-3 xl:left-5 md:top-32 xl:top-40 z-10 grid sm:grid-cols-1 md:grid-cols-5 md:gap-4 lg:gap-6 xl:gap-7 md:pr-8 lg:pr-12'>
@@ -67,7 +67,7 @@ const ProductDesign = () => {
                         })
                     }
                 </div>
-                <Image className='sm:hidden md:flex relative z-0' src='/images/home/design_module_bg.png' alt='大道云隐-当前痛点' />
+                <Image className='sm:hidden md:ml-2 lg:ml-0 md:flex relative z-0' src='/images/home/design_module_bg.png' alt='大道云隐-当前痛点' />
             </div>
             <div className='absolute left-0 bottom-0 right-0 w-screen'>
                 <Image src="/images/home/design_bg.png" alt="大道云隐-当前痛点" />
