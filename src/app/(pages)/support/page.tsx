@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 10:51:09
- * @LastEditTime: 2024-01-13 22:06:31
+ * @LastEditTime: 2024-01-13 22:22:31
  * @FilePath: /minum-website/src/app/(pages)/support/page.tsx
  */
 import React from 'react'
@@ -23,6 +23,9 @@ const Support = () => {
     return (
         <div>
             <BannerShow {...banner}/>
+            <div className='max-w-[820px] mx-auto my-[100px]'>
+                <span>11111</span>
+            </div>
         </div>
     )
 }

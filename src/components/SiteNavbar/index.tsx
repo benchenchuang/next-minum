@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:38:09
- * @LastEditTime: 2024-01-12 19:55:14
+ * @LastEditTime: 2024-01-13 22:27:48
  * @FilePath: /minum-website/src/components/SiteNavbar/index.tsx
  */
 'use client';
@@ -24,7 +24,7 @@ const SiteNavbar = () => {
         <>
             <Navbar
                 shouldHideOnScroll
-                className="bg-navbar-gradient sm:h-10 md:h-16 lg:h-20"
+                className="bg-navbar-gradient sm:h-12 md:h-16 lg:h-20"
                 maxWidth='xl'
                 height={'3rem'}
                 classNames={{
