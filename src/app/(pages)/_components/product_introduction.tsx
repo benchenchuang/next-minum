@@ -40,7 +40,7 @@ const ProductIntroduction = () => {
                 >
                     <SwiperSlide>
                         {/* 密数云 */}
-                        <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] md:mx-[20px] lg:mx-0'>
+                        <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] md:mx-[20px] xl:mx-0'>
                             <div className='flex-col flex-1 md:mr-[50px] tracking-[3px]'>
                                 <Image className='sm:w-[92px] md:w-[124px]' src="/images/home/msy_logo.svg" alt="密数云" />
                                 <h3 className='border-l-[6px] border-[#153E8B] sm:leading-[18px] md:leading-[26px] text-[#333] sm:mt-[20px] md:mt-[40px] sm:text-[20px] md:text-[30px] font-[500] pl-[10px]'>密数云</h3>
@@ -60,7 +60,7 @@ const ProductIntroduction = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         {/* 密数四库 */}
-                        <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] items-end md:mx-[20px] lg:mx-0'>
+                        <div className='flex sm:flex-col lg:flex-row sm:mx-[20px] items-end md:mx-[20px] xl:mx-0'>
                             <div className='flex-col md:mr-[50px] tracking-[3px] lg:max-w-[503px]'>
                                 <Image className='sm:w-[88px] md:w-[136px]' src="/images/home/mssk_logo.svg" alt="密数四库" />
                                 <h3 className='border-l-[6px] border-[#153E8B] sm:leading-[18px] md:leading-[26px] text-[#333] sm:mt-[20px] md:mt-[40px] sm:text-[20px] md:text-[30px] font-[500] pl-[10px]'>密数四库</h3>

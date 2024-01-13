@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-11 21:10:19
- * @LastEditTime: 2024-01-12 20:52:08
+ * @LastEditTime: 2024-01-13 10:49:25
  * @FilePath: /minum-website/src/app/(pages)/_components/product_design.tsx
  */
 'use client'
@@ -52,16 +52,16 @@ const ProductDesign = () => {
         <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative'>
             <BlockHeader {...header} />
             <div className='relative max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px]'>
-                <div className='md:absolute md:left-4 lg:left-5 md:top-32 lg:top-40 z-10 grid sm:grid-cols-1 md:grid-cols-5 md:gap-6 lg:gap-7 md:pr-12'>
+                <div className='md:absolute md:left-3 xl:left-5 md:top-32 xl:top-40 z-10 grid sm:grid-cols-1 md:grid-cols-5 md:gap-4 lg:gap-6 xl:gap-7 md:pr-8 lg:pr-12'>
                     {
                         designList.map((item,key)=>{
                             return (
                                 <div className={`wow zoomInUp cursor-pointer text-center flex flex-col items-center mx-[20px] sm:border sm:border-[#153e8b] md:border-0 sm:mb-[20px] sm:py-[15px] sm:rounded-[10px]`} onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem(-1)} key={key}>
-                                    <div className={`sm:h-[88px] md:h-[108px] lg:h-[118px] ${key===activeKey && 'animate-bounceOne'}`}>
+                                    <div className={`sm:h-[118px] md:h-[98px] lg:h-[118px] xl:h-[118px] ${key===activeKey && 'animate-bounceOne'}`}>
                                         <Image src={item.icon} alt='大道云隐-当前痛点' />
                                     </div>
-                                    <h3 className='text-[#153E8B] mt-[20px] md:text-[14px] lg:text-[20px] font-[500]'>{item.name}</h3>
-                                    <p className='text-[#666] md:mt-[20px] lg:mt-[30px] md:text-[11px] lg:text-[17px] font-[400]' dangerouslySetInnerHTML={{__html: item.detail}}></p>
+                                    <h3 className='text-[#153E8B] md:mt-15px] lg:mt-[20px] xl:mt-[20px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-[500]'>{item.name}</h3>
+                                    <p className='text-[#666] md:mt-[20px] xl:mt-[30px] md:text-[10px] lg:text-[14px] xl:text-[17px] font-[400]' dangerouslySetInnerHTML={{__html: item.detail}}></p>
                                 </div>
                             )
                         })
