@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 15:23:15
- * @LastEditTime: 2024-01-07 15:45:42
+ * @LastEditTime: 2024-01-13 18:36:37
  * @FilePath: /minum-website/src/components/BackTop/index.jsx
  */
 'use client';

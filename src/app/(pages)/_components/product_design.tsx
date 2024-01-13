@@ -49,7 +49,7 @@ const ProductDesign = () => {
     }
 
     return (
-        <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative w-screen overflow-x-hidden'>
+        <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative z-0 w-screen overflow-x-hidden'>
             <BlockHeader {...header} />
             <div className='relative max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px]'>
                 <div className='md:absolute md:left-3 xl:left-5 md:top-32 xl:top-40 z-10 grid sm:grid-cols-1 md:grid-cols-5 md:gap-4 lg:gap-6 xl:gap-7 md:pr-8 lg:pr-12'>
