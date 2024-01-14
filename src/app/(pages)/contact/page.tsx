@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-30 16:22:39
- * @LastEditTime: 2024-01-14 11:53:46
+ * @LastEditTime: 2024-01-14 11:59:27
  * @FilePath: /minum-website/src/app/(pages)/contact/page.tsx
  */
 import React from 'react'
@@ -24,9 +24,9 @@ const Contact = () => {
         description: '新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障'
     }
     return (
-        <>
+        <div>
             <BannerShow {...banner} />
-        </>
+        </div>
     )
 }
 
