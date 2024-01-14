@@ -2,28 +2,28 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-14 10:45:31
+ * @LastEditTime: 2024-01-14 17:14:07
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
 import {Link,Image,Divider} from "@nextui-org/react";
-import { Home } from '@/config/site';
+import { Home, siteConfig } from '@/config/site';
 
 const mobileMenus = [
     {
         title:'服务支持',
         children:[
             {
-                name:'电话：18112304808',
-                path:'tel:18112304808'
+                name:'电话：'+siteConfig.telephone,
+                path:'tel:'+siteConfig.telephone
             },
             {
-                name:'手机：18112304808',
-                path:'tel:18112304808'
+                name:'手机：'+siteConfig.phone,
+                path:'tel:'+siteConfig.telephone
             },
             {
-                name:'邮箱：service@minum.cloud',
-                path:'mailto:service@minum.cloud'
+                name:'邮箱：'+siteConfig.email,
+                path:'mailto:'+siteConfig.email
             }
         ]
     } 

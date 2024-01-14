@@ -2,12 +2,15 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-30 16:22:39
- * @LastEditTime: 2024-01-14 11:59:27
+ * @LastEditTime: 2024-01-14 14:32:13
  * @FilePath: /minum-website/src/app/(pages)/contact/page.tsx
  */
 import React from 'react'
 import { Metadata } from 'next'
 import BannerShow from '@/components/BannerShow'
+import CompanyIntroduction from './_components/company-introduction'
+import ParterModule from './_components/parter-module'
+import UsModule from './_components/us-module'
 
 export const metadata: Metadata = {
     title: "联系我们"
@@ -26,6 +29,9 @@ const Contact = () => {
     return (
         <div>
             <BannerShow {...banner} />
+            <CompanyIntroduction />
+            <ParterModule/>
+            <UsModule/>
         </div>
     )
 }
