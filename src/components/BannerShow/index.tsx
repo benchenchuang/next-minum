@@ -34,7 +34,7 @@ const BannerShow = (props: BannerType) => {
     } = props;
     return (
         <div className='relative flex justify-center' style={{ backgroundColor: bgColor }}>
-            <div className={`absolute z-10 h-full flex ${position}`}>
+            <div className={`absolute z-10 ${position=='items-center'&&'h-full'} flex ${position}`}>
                 <div className={`banner_text_box ${textColor} text-center max-w-[1200px]`}>
                     {
                         title && <h2 className='wow fadeInDown title sm:text-[20px] md:text-[50px] xl:text-[80px] font-[700] sm:mt-2 xl:mt-0 sm:tracking-[5px] md:tracking-[20px]'>{title}</h2>
