@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-13 22:04:09
+ * @LastEditTime: 2024-01-14 10:58:21
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
@@ -43,6 +43,7 @@ export default function Home() {
         title: '大道云隐',
         subTitle: '新一代数据资产安全保护引领者',
         videoPath: '/minum.mp4',
+        position:'items-center',
         description: '新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障'
     }
     return (

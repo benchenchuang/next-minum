@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:37:44
- * @LastEditTime: 2024-01-13 20:59:25
+ * @LastEditTime: 2024-01-14 10:45:31
  * @FilePath: /minum-website/src/components/SiteFooter/index.tsx
  */
 import React from 'react'
@@ -34,7 +34,7 @@ const siteFooterMenus = [
         children:[
             {
                 name:'资质与荣誉',
-                path:'href:(0)'
+                path:'/honor'
             },
             {
                 name:'公司官网',

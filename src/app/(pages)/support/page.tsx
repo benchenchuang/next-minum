@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 10:51:09
- * @LastEditTime: 2024-01-13 23:17:25
+ * @LastEditTime: 2024-01-14 11:00:16
  * @FilePath: /minum-website/src/app/(pages)/support/page.tsx
  */
 import React from 'react'
@@ -20,12 +20,13 @@ const Support = () => {
         textColor: 'text-white',
         title: '产品咨询',
         imagePath: '/images/support/banner_bg.png',
+        position:'top-1/3',
     };
     
     return (
         <div>
             <BannerShow {...banner} />
-            <div className='max-w-[820px] flex flex-col mx-auto my-[100px]'>
+            <div className='max-w-[820px] flex flex-col my-[100px] sm:mx-[20px] md:mx-[40px] lg:mx-auto'>
                 <SupportForm />
             </div>
         </div>
