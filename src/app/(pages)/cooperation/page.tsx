@@ -1,20 +1,24 @@
-/*
- * @Author: Jimmy
- * @LastModifiedBy: Jimmy
- * @Date: 2024-01-07 10:50:02
- * @LastEditTime: 2024-01-07 10:50:31
- * @FilePath: /minum-website/src/app/cooperation/page.tsx
- */
 import React from 'react'
 import { Metadata } from 'next'
+import BannerShow from '@/components/BannerShow'
+import PageWrap from './_components/page_wrap'
 
 export const metadata: Metadata = {
     title: "合作案例"
 }
 
 const Cooperation = () => {
+    const banner = {
+        bgColor: '#0d1943',
+        textColor: 'text-white',
+        imagePath: '/images/cooperate/banner_bg.png',
+        position:'items-center',
+    }
     return (
-        <div>Cooperation</div>
+        <div>
+            <BannerShow {...banner} />
+            <PageWrap/>
+        </div>
     )
 }
 

@@ -1,0 +1,32 @@
+/*
+ * @Author: Jimmy
+ * @LastModifiedBy: Jimmy
+ * @Date: 2024-01-14 19:52:54
+ * @LastEditTime: 2024-01-14 20:26:13
+ * @FilePath: /minum-website/src/app/(pages)/cooperation/_components/page_wrap.tsx
+ */
+'use client'
+import React, { useState } from 'react'
+import ExampleSwitch from './exmaple_switch'
+import ExampleOne from './example_one'
+import ExampleTwo from './exmaple_two'
+
+const PageWrap = () => {
+    const [showType,setShowType] = useState<number>(0)
+    const switchType = (type:number)=>{
+        setShowType(type)
+    }
+    
+    return (
+        <div>
+            <ExampleSwitch switchExample={switchType} type={showType}/>
+            <div className='mt-[24px]'>
+                {
+                    showType==0 ? <ExampleOne />:<ExampleTwo/>
+                }
+            </div>
+        </div>
+    )
+}
+
+export default PageWrap

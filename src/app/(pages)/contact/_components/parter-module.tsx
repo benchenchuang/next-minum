@@ -67,7 +67,7 @@ const ParterModule = () => {
                         partnerList.map((item,key)=>{
                             return (
                                 <div key={key}
-                                    className={`flex flex-col justify-center items-center ${(key+1)%3!=0 && 'border-[#aaa] border-r-[1px]'} md:max-h-[30px] xl:max-h-[80px]`}>
+                                    className={`wow bounceIn flex flex-col justify-center items-center ${(key+1)%3!=0 && 'border-[#aaa] border-r-[1px]'} md:max-h-[30px] xl:max-h-[80px]`}>
                                     <Image className='sm:max-w-24 md:max-h-[30px] md:max-w-44 xl:max-w-48 xl:max-h-[80px]' src={item.image} alt={'大道云隐-'+item.name} />
                                 </div>
                             )

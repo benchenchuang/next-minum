@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 14:31:55
- * @LastEditTime: 2024-01-14 18:00:30
+ * @LastEditTime: 2024-01-14 20:23:19
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/us-module.tsx
  */
 import React from 'react'
@@ -22,7 +22,7 @@ const UsModule = () => {
                     </div>
                     <div className='flex flex-col sm:gap-y-2 md:gap-y-3 lg:gap-y-8 sm:mt-[20px] md:mt-[40px] lg:mt-[70px]'>
                         <div className='flex flex-row items-center'>
-                            <Image className='mr-[10px]' src='/images/contact/email.png' />
+                            <Image className='mr-[10px]' src='/images/contact/phone.png' />
                             <Link className='text-[#333] sm:text-[13px] xl:text-[16px] font-[400]' href={'tel:' + siteConfig.phone}>电话：{siteConfig.phone}</Link>
                         </div>
                         <div className='flex flex-row items-center'>
