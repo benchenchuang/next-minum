@@ -2,14 +2,14 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 20:25:32
- * @LastEditTime: 2024-01-14 21:31:37
+ * @LastEditTime: 2024-01-15 23:12:06
  * @FilePath: /minum-website/src/app/(pages)/cooperation/_components/one_contruction.tsx
  */
 import React, { useState } from 'react'
 import { Image } from "@nextui-org/react";
 
 const OneConstruction = () => {
-    const [active,setActive] = useState<number>(0)
+    const [active,setActive] = useState<number>()
     const list = [
         {
             icon:'/images/cooperate/one/water.png',
@@ -39,7 +39,7 @@ const OneConstruction = () => {
                             key={key}
                             onMouseEnter={()=>setActive(key)}
                             onMouseLeave={()=>setActive(-1)}
-                            className={`
+                            className={`wow fadeInUp
                             bg-[#FAFCFF] relative cursor-pointer rounded-[10px] transition-all
                             ${active==key?'text-white':'text-[#333] border border-[#BBD4F0]'}
                             md:px-8 lg:px-12
