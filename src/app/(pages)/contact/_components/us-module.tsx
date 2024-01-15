@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 14:31:55
- * @LastEditTime: 2024-01-14 20:23:19
+ * @LastEditTime: 2024-01-15 19:40:09
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/us-module.tsx
  */
 import React from 'react'
@@ -37,7 +37,7 @@ const UsModule = () => {
                     <h2 className='text-white text-center bg-[#153E8B] text-[16px] sm:mt-[15px] md:mt-[40px] lg:mt-[70px] leading-10 h-10 tracking-[9px]'>新一代数据资产安全保护引领者</h2>
                 </div>
                 <div className='box-border sm:mt-6 md:mt-0 md:w-7/12 lg:w-2/3 md:ml-[30px] lg:ml-[50px]'>
-                    <Image radius='none' src='/images/contact/map.png' alt='大道云隐'/>
+                    <Image radius='none' src='/images/contact/map.jpg' alt='大道云隐'/>
                 </div>
             </div>
         </div>
