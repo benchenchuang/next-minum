@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-13 10:50:35
- * @LastEditTime: 2024-01-13 21:54:29
+ * @LastEditTime: 2024-01-15 21:44:37
  * @FilePath: /minum-website/src/app/(pages)/_components/module-diagram.tsx
  */
 'use client'
@@ -37,81 +37,81 @@ const ModuleDiagram = () => {
     ]
     const assetsList = [
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/assets/01.png',
             name:'资产目录'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/assets/02.png',
             name:'安全风险评估'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/assets/03.png',
             name:'分类分级'
         }
     ]
     const fileList = [
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/module/01.png',
             name:'安全协作'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/module/02.png',
             name:'企业网盘'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/module/03.png',
             name:'数据同步'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/module/04.png',
             name:'内容合规'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/module/05.png',
             name:'动态权限'
         }
     ]
     const leakList = [
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/01.png',
             name:'内部管控'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/02.png',
             name:'外发保护'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/03.png',
             name:'社交保护'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/04.png',
             name:'风险分析'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/05.png',
             name:'行为分析'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/leak/06.png',
             name:'文件溯源'
         }
     ]
     const damageList = [
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/damage/01.png',
             name:'实时备份'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/damage/02.png',
             name:'数据恢复'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/damage/03.png',
             name:'同城异地'
         },
         {
-            icon:'/images/home/design_rule.png',
+            icon:'/images/home/damage/04.png',
             name:'数据防勒索'
         }
     ]
@@ -145,7 +145,7 @@ const ModuleDiagram = () => {
                                 assetsList.map((item,key)=>{
                                     return (
                                         <div key={key} className='flex flex-col items-center bg-white bg-opacity-30 rounded-[5px] sm:py-[20px] md:py-[50px]'>
-                                            <Image src={item.icon} alt={item.name} />
+                                            <Image className='sm:max-h-[60px] md:max-h-[80px] xl:max-h-[140px]' src={item.icon} alt={item.name} />
                                             <p className='text-white sm:mt-[20px] md:mt-[50px] sm:text-[14px] md:text-[20px] '>{item.name}</p>
                                         </div>
                                     )
@@ -162,7 +162,7 @@ const ModuleDiagram = () => {
                                 fileList.map((item,key)=>{
                                     return (
                                         <div key={key} className='flex flex-col items-center bg-[#33539E] bg-opacity-80 rounded-[5px] sm:pt-[30px] md:pt-[75px] pb-[30px]'>
-                                            <Image src={item.icon} alt={item.name} />
+                                            <Image className='sm:max-h-[60px] md:max-h-[80px] xl:max-h-[140px]' src={item.icon} alt={item.name} />
                                             <p className='text-white sm:mt-[20px] md:mt-[40px] lg:mt-[70px] sm:text-[14px] md:text-[20px]'>{item.name}</p>
                                         </div>
                                     )
