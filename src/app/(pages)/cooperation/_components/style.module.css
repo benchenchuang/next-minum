@@ -1,0 +1,70 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    transform: translateY(30px);
+}
+.menu-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.menu-cell:hover{
+    box-shadow: 0 0 20px rgba(21, 62, 139, .5);
+}
+.menu-cell .image{
+    opacity: 0;
+}
+.menu-cell:hover .image{
+    opacity: 1;
+}
+.menu-cell::before {
+    background: #E4EDF7;
+}
+.menu-cell::after {
+    background: #E4EDF7;
+    opacity: 0.5;
+    transition: opacity 350ms;
+}
+.menu-cell::before,
+.menu-cell::after {
+    content: "";
+}
+.menu-cell:hover::before {
+    background: #fff;
+}
+.menu-cell:hover::after {
+    opacity: 0.2;
+    transition: opacity 350ms;
+}
+.menu-cell__image {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-style: none;
+}
+.menu-cell__image {
+    width: 70px;
+    height: 70px;
+    margin-top: -10px;
+}
+.menu-cell::before,
+.menu-cell::after {
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    display: block;
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: -1;
+}
