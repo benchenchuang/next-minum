@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-13 10:53:16
+ * @LastEditTime: 2024-01-17 21:28:24
  * @FilePath: /minum-website/tailwind.config.ts
  */
 import { nextui } from "@nextui-org/react";
@@ -40,7 +40,8 @@ const config: Config = {
                 "card-module":"linear-gradient(0deg, rgba(168, 188, 224, 0.3) 0%, rgba(176, 208, 244, 0) 100%)",
                 "module-item":"linear-gradient(180deg, #F1F6FE 0%, #D3E1FB 100%)",
                 "module-active":"linear-gradient(90deg, #BFD0F5 0%, #0764E6 100%)",
-                "diagram-module":" linear-gradient(225deg, rgba(64, 76, 168, 1) 0%, rgba(16, 34, 84, 1) 33.64%, rgba(6, 33, 107, 1) 65.81%, rgba(29, 72, 171, 1) 100%)"
+                "diagram-module":" linear-gradient(225deg, rgba(64, 76, 168, 1) 0%, rgba(16, 34, 84, 1) 33.64%, rgba(6, 33, 107, 1) 65.81%, rgba(29, 72, 171, 1) 100%)",
+                "benefit-header":"linear-gradient(90deg, #153E8B 0%, #84B1F0 100%)"
             },
             animation: {
                 bounceOne: 'bounce 1s'

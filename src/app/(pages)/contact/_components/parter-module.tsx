@@ -1,3 +1,10 @@
+/*
+ * @Author: Jimmy
+ * @LastModifiedBy: Jimmy
+ * @Date: 2024-01-14 12:59:16
+ * @LastEditTime: 2024-01-17 21:11:27
+ * @FilePath: /minum-website/src/app/(pages)/contact/_components/parter-module.tsx
+ */
 import React from 'react'
 import BlockHeader from '@/components/BlockHeader'
 import { Image } from "@nextui-org/react";
@@ -76,7 +83,9 @@ const ParterModule = () => {
                 </div>
             </div>
             <div className='bg-[#000000] bg-opacity-45 absolute left-0 bottom-0 z-10 right-0 top-0'></div>
-            <img className='absolute left-0 bottom-0 z-0 top-0 right-0 h-full' src="/images/contact/parter_bg.png" alt="大道云隐-合作伙伴" />
+            <div className='absolute left-0 bottom-0 z-0 top-0 right-0 h-full w-full'>
+                <Image className='w-screen' radius="none" src="/images/contact/parter_bg.png" alt="大道云隐-合作伙伴" />
+            </div>
         </div>
     )
 }
