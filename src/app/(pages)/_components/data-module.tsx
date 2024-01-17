@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-12 22:50:52
- * @LastEditTime: 2024-01-12 23:08:07
+ * @LastEditTime: 2024-01-17 22:23:44
  * @FilePath: /minum-website/src/app/(pages)/_components/data-module.tsx
  */
 import React from 'react'
@@ -22,7 +22,7 @@ const DataModule = () => {
     return (
         <div className='bg-[#F5F8FC] sm:py-[50px] md:py-[100px] relative'>
             <BlockHeader {...header} />
-            <div className='relative z-10 max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+            <div className='relative z-10 max-w-[1241px] xl:mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 gap-8'>
                 {
                     moduleList.map((item,key)=>{
                         return (
