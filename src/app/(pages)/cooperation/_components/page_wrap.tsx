@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 19:52:54
- * @LastEditTime: 2024-01-18 19:54:35
+ * @LastEditTime: 2024-01-18 21:48:19
  * @FilePath: /minum-website/src/app/(pages)/cooperation/_components/page_wrap.tsx
  */
 'use client'
@@ -12,7 +12,7 @@ import ExampleOne from './example_one'
 import ExampleTwo from './exmaple_two'
 
 const PageWrap = () => {
-    const [showType,setShowType] = useState<number>(1)
+    const [showType,setShowType] = useState<number>(0)
     const switchType = (type:number)=>{
         setShowType(type)
     }
