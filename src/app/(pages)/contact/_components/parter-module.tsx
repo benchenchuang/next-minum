@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:59:16
- * @LastEditTime: 2024-01-17 21:11:27
+ * @LastEditTime: 2024-01-19 23:11:40
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/parter-module.tsx
  */
 import React from 'react'
@@ -74,7 +74,7 @@ const ParterModule = () => {
                         partnerList.map((item,key)=>{
                             return (
                                 <div key={key}
-                                    className={`wow bounceIn flex flex-col justify-center items-center ${(key+1)%3!=0 && 'border-[#aaa] border-r-[1px]'} md:max-h-[30px] xl:max-h-[80px]`}>
+                                    className={`wow bounceIn hover:scale-105 transition-all flex flex-col justify-center items-center ${(key+1)%3!=0 && 'border-[#aaa] border-r-[1px]'} md:max-h-[30px] xl:max-h-[80px]`}>
                                     <Image className='sm:max-w-24 md:max-h-[30px] md:max-w-44 xl:max-w-48 xl:max-h-[80px]' src={item.image} alt={'大道云隐-'+item.name} />
                                 </div>
                             )
