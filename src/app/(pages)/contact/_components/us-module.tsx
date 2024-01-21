@@ -2,13 +2,15 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 14:31:55
- * @LastEditTime: 2024-01-15 19:40:09
+ * @LastEditTime: 2024-01-21 22:03:15
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/us-module.tsx
  */
+'use client';
 import React from 'react'
 import { Image } from "@nextui-org/react";
 import Link from 'next/link';
-import { siteConfig } from '@/config/site';
+import { mapKey, siteConfig } from '@/config/site';
+import { Map, APILoader,Marker } from '@uiw/react-amap';
 
 const UsModule = () => {
     return (
@@ -37,7 +39,18 @@ const UsModule = () => {
                     <h2 className='text-white text-center bg-[#153E8B] text-[16px] sm:mt-[15px] md:mt-[40px] lg:mt-[70px] leading-10 h-10 tracking-[9px]'>新一代数据资产安全保护引领者</h2>
                 </div>
                 <div className='box-border sm:mt-6 md:mt-0 md:w-7/12 lg:w-2/3 md:ml-[30px] lg:ml-[50px]'>
-                    <Image radius='none' src='/images/contact/map.jpg' alt='大道云隐'/>
+                    <Image className='sm:flex md:hidden' radius='none' src='/images/contact/map.jpg' alt='大道云隐'/>
+                    <div className='sm:hidden md:flex' style={{ width: '100%', height: '100%' }}>
+                        <APILoader akey={mapKey}>
+                            <Map zoom={17} center={[119.991907, 31.810060]} mapStyle="amap://styles/whitesmoke">
+                                <Marker 
+                                    icon="/images/contact/map_location.png" 
+                                    title="大道云隐"
+                                    offset={[-13, -30]}
+                                    position={[119.991907, 31.810190]} />
+                            </Map>
+                        </APILoader>
+                    </div>
                 </div>
             </div>
         </div>

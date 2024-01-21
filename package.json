@@ -12,6 +12,7 @@
     "@nextui-org/react": "^2.2.9",
     "@prisma/client": "^5.8.0",
     "@types/bcryptjs": "^2.4.6",
+    "@uiw/react-amap": "^6.0.1",
     "animate.css": "^4.1.1",
     "axios": "^1.6.5",
     "bcryptjs": "^2.4.3",

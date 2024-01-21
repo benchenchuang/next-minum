@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 21:04:28
- * @LastEditTime: 2024-01-14 17:19:04
+ * @LastEditTime: 2024-01-21 21:29:47
  * @FilePath: /minum-website/src/config/site.ts
  */
 export type SiteConfig = typeof siteConfig;
@@ -20,6 +20,8 @@ export const siteConfig = {
     email:'service@minum.cloud',
     address:"江苏省常州市新北区创意软件园E座1301"
 }
+
+export const mapKey = 'b4990743cbd5174a1d8bb548f357e3ee';
 
 export const Home = '/';
 
