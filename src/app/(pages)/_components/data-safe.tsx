@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-12 20:32:45
- * @LastEditTime: 2024-01-15 21:30:01
+ * @LastEditTime: 2024-01-27 17:23:25
  * @FilePath: /minum-website/src/app/(pages)/_components/data-safe.tsx
  */
 import React from 'react'
@@ -39,7 +39,7 @@ const DataSafe = () => {
     return (
         <div className='bg-[#fff] relative sm:py-[50px] md:py-[100px]'>
             <BlockHeader {...header} />
-            <div className='max-w-[1241px] mx-auto sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='max-w-[1241px] relative sm:pt-[50px] md:pt-[70px] grid sm:mx-[30px] lg:mx-auto md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {
                     introList.map((item,key)=>{
                         return (

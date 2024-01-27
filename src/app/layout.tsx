@@ -2,16 +2,15 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-14 10:00:56
+ * @LastEditTime: 2024-01-27 18:51:51
  * @FilePath: /minum-website/src/app/layout.tsx
  */
-import type { Metadata } from 'next'
 import '@/styles/global.css'
 import '@/styles/animate.css'
+import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import { Toaster } from 'react-hot-toast';
-
 export const metadata: Metadata = {
     title: {
         default: siteConfig.name,

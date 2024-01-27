@@ -2,9 +2,10 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:59:16
- * @LastEditTime: 2024-01-19 23:13:18
+ * @LastEditTime: 2024-01-27 17:09:49
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/parter-module.tsx
  */
+'use client';
 import React from 'react'
 import BlockHeader from '@/components/BlockHeader'
 import { Image } from "@nextui-org/react";

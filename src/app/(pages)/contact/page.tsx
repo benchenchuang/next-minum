@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-30 16:22:39
- * @LastEditTime: 2024-01-14 14:32:13
+ * @LastEditTime: 2024-01-27 17:49:22
  * @FilePath: /minum-website/src/app/(pages)/contact/page.tsx
  */
 import React from 'react'
@@ -10,7 +10,12 @@ import { Metadata } from 'next'
 import BannerShow from '@/components/BannerShow'
 import CompanyIntroduction from './_components/company-introduction'
 import ParterModule from './_components/parter-module'
-import UsModule from './_components/us-module'
+// import UsModule from './_components/us-module'
+import dynamic from 'next/dynamic';
+const UsModule = dynamic(
+    ()=>import('./_components/us-module'),
+    {ssr:false}
+);
 
 export const metadata: Metadata = {
     title: "联系我们"

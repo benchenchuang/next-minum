@@ -2,12 +2,10 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-14 10:58:21
+ * @LastEditTime: 2024-01-27 18:51:08
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
-import '@/styles/global.css'
-import '@/styles/animate.css'
 import SiteNavbar from '@/components/SiteNavbar';
 import SiteFooter from '@/components/SiteFooter';
 import BackTop from '@/components/BackTop';

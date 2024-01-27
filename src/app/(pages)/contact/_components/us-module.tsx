@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 14:31:55
- * @LastEditTime: 2024-01-21 22:03:15
+ * @LastEditTime: 2024-01-27 17:39:30
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/us-module.tsx
  */
 'use client';
