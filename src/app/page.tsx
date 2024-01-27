@@ -43,18 +43,15 @@ export default function Home() {
         description: '新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障'
     }
     return (
-        <div>
-            
-            <div className='sm:-mt-10 md:-mt-20'>
-                <BannerShow {...banner} />
-                <HomeSummarize />
-                <div id='product_introduction'></div>
-                <ProductIntroduction />
-                <ProductDesign />
-                <DataSafe />
-                <DataModule />
-                <ModuleDiagram />
-            </div>
+        <div className='sm:-mt-10 md:-mt-20'>
+            <BannerShow {...banner} />
+            <HomeSummarize />
+            <div id='product_introduction'></div>
+            <ProductIntroduction />
+            <ProductDesign />
+            <DataSafe />
+            <DataModule />
+            <ModuleDiagram />
         </div>
     );
 }
