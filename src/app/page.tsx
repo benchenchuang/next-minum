@@ -2,13 +2,10 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-27 18:51:08
+ * @LastEditTime: 2024-01-27 19:34:01
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
-import SiteNavbar from '@/components/SiteNavbar';
-import SiteFooter from '@/components/SiteFooter';
-import BackTop from '@/components/BackTop';
 import BannerShow from '@/components/BannerShow';
 import HomeSummarize from './(pages)/_components/home_summarize';
 import ProductIntroduction from './(pages)/_components/product_introduction';
@@ -18,6 +15,7 @@ import DataModule from './(pages)/_components/data-module';
 import ModuleDiagram from './(pages)/_components/module-diagram';
 import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
     const searchParams = useSearchParams()
@@ -27,6 +25,7 @@ export default function Home() {
             scrollToAnchor();
         }
     }, [searchParams])
+
     const scrollToAnchor = () => {
         const targetElement = document.getElementById('product_introduction');
         if (targetElement) {
@@ -46,7 +45,7 @@ export default function Home() {
     }
     return (
         <div>
-            <SiteNavbar />
+            
             <div className='sm:-mt-10 md:-mt-20'>
                 <BannerShow {...banner} />
                 <HomeSummarize />
@@ -57,8 +56,6 @@ export default function Home() {
                 <DataModule />
                 <ModuleDiagram />
             </div>
-            <BackTop />
-            <SiteFooter />
         </div>
     );
 }

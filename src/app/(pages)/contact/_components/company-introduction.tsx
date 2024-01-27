@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:20:38
- * @LastEditTime: 2024-01-19 23:00:21
+ * @LastEditTime: 2024-01-27 19:19:44
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/company-introduction.tsx
  */
 'use client'
