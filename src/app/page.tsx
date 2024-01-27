@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-27 19:34:01
+ * @LastEditTime: 2024-01-27 19:45:04
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
@@ -15,7 +15,6 @@ import DataModule from './(pages)/_components/data-module';
 import ModuleDiagram from './(pages)/_components/module-diagram';
 import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
-import Link from 'next/link';
 
 export default function Home() {
     const searchParams = useSearchParams()
