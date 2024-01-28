@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-27 19:45:04
+ * @LastEditTime: 2024-01-28 11:41:35
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
@@ -15,6 +15,9 @@ import DataModule from './(pages)/_components/data-module';
 import ModuleDiagram from './(pages)/_components/module-diagram';
 import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
+import SiteNavbar from '@/components/SiteNavbar';
+import BackTop from '@/components/BackTop';
+import SiteFooter from '@/components/SiteFooter';
 
 export default function Home() {
     const searchParams = useSearchParams()
@@ -43,15 +46,20 @@ export default function Home() {
         description: '新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障新一代数据资产安全保护引领者，为用户提供最可靠的数据安全保障'
     }
     return (
-        <div className='sm:-mt-10 md:-mt-20'>
-            <BannerShow {...banner} />
-            <HomeSummarize />
-            <div id='product_introduction'></div>
-            <ProductIntroduction />
-            <ProductDesign />
-            <DataSafe />
-            <DataModule />
-            <ModuleDiagram />
-        </div>
+        <>
+            <SiteNavbar />
+            <div className='sm:-mt-10 md:-mt-20'>
+                <BannerShow {...banner} />
+                <HomeSummarize />
+                <div id='product_introduction'></div>
+                <ProductIntroduction />
+                <ProductDesign />
+                <DataSafe />
+                <DataModule />
+                <ModuleDiagram />
+            </div>
+            <BackTop />
+            <SiteFooter />
+        </>
     );
 }
