@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-28 11:41:35
+ * @LastEditTime: 2024-01-28 11:46:43
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
@@ -16,7 +16,6 @@ import ModuleDiagram from './(pages)/_components/module-diagram';
 import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import SiteNavbar from '@/components/SiteNavbar';
-import BackTop from '@/components/BackTop';
 import SiteFooter from '@/components/SiteFooter';
 
 export default function Home() {
@@ -58,7 +57,6 @@ export default function Home() {
                 <DataModule />
                 <ModuleDiagram />
             </div>
-            <BackTop />
             <SiteFooter />
         </>
     );

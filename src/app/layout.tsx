@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-28 11:40:57
+ * @LastEditTime: 2024-01-28 11:46:39
  * @FilePath: /minum-website/src/app/layout.tsx
  */
 import '@/styles/global.css'
@@ -11,6 +11,8 @@ import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
 import { Toaster } from 'react-hot-toast';
+import BackTop from '@/components/BackTop';
+
 export const metadata: Metadata = {
     title: {
         default: siteConfig.name,
@@ -37,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </Providers>
                 <Toaster />
+                <BackTop/>
             </body>
         </html>
     );
