@@ -6,7 +6,7 @@
  * @FilePath: /minum-website/src/app/layout.tsx
  */
 import '@/styles/global.css'
-import "@/styles/animate.css";
+import "animate.css";
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { siteConfig } from '@/config/site';
