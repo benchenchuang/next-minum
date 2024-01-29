@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-07 13:08:46
- * @LastEditTime: 2024-01-14 11:01:01
+ * @LastEditTime: 2024-01-29 19:08:57
  * @FilePath: /minum-website/src/components/BannerShow/index.tsx
  */
 'use client'
@@ -55,7 +55,7 @@ const BannerShow = (props: BannerType) => {
             }
             {
                 videoPath && (
-                    <video className="max-h-[909px] rounded-none z-1" preload="auto" loop autoPlay muted src={videoPath}></video>
+                    <video className="rounded-none z-1" preload="auto" loop autoPlay muted src={videoPath}></video>
                 )
             }
 
