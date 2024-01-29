@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2023-12-23 22:15:45
- * @LastEditTime: 2024-01-28 11:46:43
+ * @LastEditTime: 2024-01-29 18:44:53
  * @FilePath: /minum-website/src/app/page.tsx
  */
 'use client'
@@ -17,10 +17,12 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import SiteNavbar from '@/components/SiteNavbar';
 import SiteFooter from '@/components/SiteFooter';
+import { wowInit } from '@/libs/wow-init';
 
 export default function Home() {
     const searchParams = useSearchParams()
     useEffect(() => {
+        wowInit();
         let type = searchParams.get('type');
         if (type) {
             scrollToAnchor();
