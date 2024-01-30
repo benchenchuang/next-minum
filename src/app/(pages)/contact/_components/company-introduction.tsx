@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:20:38
- * @LastEditTime: 2024-01-30 19:55:11
+ * @LastEditTime: 2024-01-30 20:40:26
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/company-introduction.tsx
  */
 'use client'
@@ -124,9 +124,28 @@ const CompanyIntroduction = () => {
                         </div>
                     </div>
                 </div>
-                {/* 发展与未来 */}
+                {/* 发展与未来 1024屏幕以上*/}
                 <div className='max-w-[1400px] sm:pt-[50px] md:pt-[60px] flex sm:flex-col md:flex-row sm:mx-[30px] xl:mx-auto'>
-
+                    <div className='flex flex-row relative'>
+                        {
+                            developList.map((item,index)=>{
+                                return index%2==1?(
+                                    <div className='flex flex-col relative z-10 items-center lg:h-[208px] xl:h-[188px] text-center'>
+                                        <p className='text-[#666] lg:h-[50px] xl:h-[40px] lg:text-[12px] xl:text-[14px] mb-3'>{item.content}</p>
+                                        <span className='bg-module-active text-white w-[90px] rounded-full shadow-md text-[12px] h-[24px] leading-[24px]'>{item.date}</span>
+                                        <span className='w-[12px] h-[12px] rounded-full border border-[#A6A6A6] mt-3 bg-white'></span>
+                                    </div>
+                                ):(
+                                    <div className='flex flex-col relative z-10 lg:h-[208px] xl:h-[188px] justify-end items-center text-center'>
+                                        <span className='w-[12px] h-[12px] rounded-full border border-[#A6A6A6] mb-3 bg-white'></span>
+                                        <span className='bg-module-active text-white w-[90px] rounded-full shadow-md text-[12px] h-[24px] leading-[24px]'>{item.date}</span>
+                                        <p className='text-[#666] lg:h-[50px] xl:h-[40px] lg:text-[12px] xl:text-[14px] mt-3'>{item.content}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                        <span className='absolute left-0 top-[50%] z-0 right-0 h-[2px] bg-[#A6A6A6]'></span>
+                    </div>
                 </div>
                 
             </div>
