@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:20:38
- * @LastEditTime: 2024-01-27 19:19:44
+ * @LastEditTime: 2024-01-30 19:55:11
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/company-introduction.tsx
  */
 'use client'
@@ -18,19 +18,64 @@ const CompanyIntroduction = () => {
     const [active,setActive] = useState<string>('introduction')
     const tabList = [
         {
-            image:'',
+            image:'/images/contact/icon_company.svg',
+            imageOn:'/images/contact/icon_company_active.svg',
             name:'企业简介',
             type:'introduction'
         },
         {
-            image:'',
+            image:'/images/contact/icon_feature.svg',
+            imageOn:'/images/contact/icon_feature_active.svg',
             name:'发展与未来',
             type:'develop'
         },
         {
-            image:'',
+            image:'/images/contact/icon_commerce.svg',
+            imageOn:'/images/contact/icon_commerce_active.svg',
             name:'商业布局和拓展',
             type:'layout'
+        }
+    ]
+    const developList = [
+        {
+            date:'2022.9.12',
+            content:'与国家健康医疗大数据（东部）中心项目合作'
+        },
+        {
+            date:'2022.12.30',
+            content:'通过常州21批龙城英才'
+        },
+        {
+            date:'2023.3.2',
+            content:'通过信息安全体系认证通过隐私信息管理体系认证'
+        },
+        {
+            date:'2023.3.30',
+            content:'云上贵州贵阳大数据交易所合作'
+        },
+        {
+            date:'2023.4.28',
+            content:'入选“智改数转”服务商'
+        },
+        {
+            date:'2023.5.16',
+            content:'与江苏泷膜环境科技有限公司项目合作'
+        },
+        {
+            date:'2023.6.27',
+            content:'信承瑞技术有限公司项目合作'
+        },
+        {
+            date:'2023.8.16',
+            content:'中山大学项目方案交付'
+        },
+        {
+            date:'2023.9.14',
+            content:'大道云隐成为全国信息安全标准化技术委员会成员单位'
+        },
+        {
+            date:'2023.10.19',
+            content:'成立常州市数据安全创新中心'
         }
     ]
 
@@ -44,9 +89,11 @@ const CompanyIntroduction = () => {
                             return (
                                 <div
                                     key={item.type}
-                                    className=''
+                                    className='flex flex-col justify-center items-center'
                                     onClick={()=>setActive(item.type)}>
-                                    {/* <Image src={item.image} alt={item.name}/> */}
+                                        {
+                                            active==item.type?<Image radius='none' src={item.imageOn} alt={item.name}/>:<Image radius='none' src={item.image} alt={item.name}/>
+                                        }
                                     <p className={`pb-[2px] ${active==item.type?'border-b-[3px] border-[#153E8B] text-[#153E8B]':'text-[#666]'} cursor-pointer sm:text-[14px] md:text-[20px]`}>{item.name}</p>
                                 </div>
                             )
@@ -76,6 +123,10 @@ const CompanyIntroduction = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                {/* 发展与未来 */}
+                <div className='max-w-[1400px] sm:pt-[50px] md:pt-[60px] flex sm:flex-col md:flex-row sm:mx-[30px] xl:mx-auto'>
+
                 </div>
                 
             </div>
