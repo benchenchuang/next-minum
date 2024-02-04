@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:20:38
- * @LastEditTime: 2024-01-31 20:13:48
+ * @LastEditTime: 2024-02-04 09:40:11
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/company-introduction.tsx
  */
 'use client'
@@ -131,13 +131,13 @@ const CompanyIntroduction = () => {
                         {
                             developList.map((item,index)=>{
                                 return index%2==1?(
-                                    <div className='flex flex-col relative z-10 items-center lg:h-[208px] xl:h-[188px] text-center'>
+                                    <div className='flex flex-col relative z-10 items-center lg:h-[208px] xl:h-[188px] text-center' key={index}>
                                         <p className='text-[#666] lg:h-[50px] xl:h-[40px] lg:text-[12px] xl:text-[14px] mb-3'>{item.content}</p>
                                         <span className='bg-module-active text-white w-[90px] rounded-full shadow-md text-[12px] h-[24px] leading-[24px]'>{item.date}</span>
                                         <span className='w-[12px] h-[12px] rounded-full border border-[#A6A6A6] mt-3 bg-white'></span>
                                     </div>
                                 ):(
-                                    <div className='flex flex-col relative z-10 lg:h-[208px] xl:h-[188px] justify-end items-center text-center'>
+                                    <div className='flex flex-col relative z-10 lg:h-[208px] xl:h-[188px] justify-end items-center text-center' key={index}>
                                         <span className='w-[12px] h-[12px] rounded-full border border-[#A6A6A6] mb-3 bg-white'></span>
                                         <span className='bg-module-active text-white w-[90px] rounded-full shadow-md text-[12px] h-[24px] leading-[24px]'>{item.date}</span>
                                         <p className='text-[#666] lg:h-[50px] xl:h-[40px] lg:text-[12px] xl:text-[14px] mt-3'>{item.content}</p>
@@ -152,7 +152,7 @@ const CompanyIntroduction = () => {
                         {
                             developList.map((item,index)=>{
                                 return (
-                                    <div className='flex flex-col relative z-10 justify-end items-center text-center bg-white my-4 py-3'>
+                                    <div className='flex flex-col relative z-10 justify-end items-center text-center bg-white my-4 py-3' key={index}>
                                         {/* <span className='w-[12px] h-[12px] rounded-full border border-[#A6A6A6] mb-3 bg-white'></span> */}
                                         <span className='bg-module-active text-white w-[90px] rounded-full shadow-md text-[12px] h-[24px] leading-[24px]'>{item.date}</span>
                                         <p className='text-[#666] sm:text-[12px] mt-2'>{item.content}</p>
