@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-14 12:20:38
- * @LastEditTime: 2024-02-04 09:40:11
+ * @LastEditTime: 2024-02-04 16:21:19
  * @FilePath: /minum-website/src/app/(pages)/contact/_components/company-introduction.tsx
  */
 'use client'
@@ -125,7 +125,7 @@ const CompanyIntroduction = () => {
                     </div>
                 </div>
                 {/* 发展与未来*/}
-                <div className=' hidden max-w-[1400px] sm:pt-[50px] md:pt-[60px] flex sm:flex-col md:flex-row sm:mx-[30px] xl:mx-auto'>
+                <div className=' max-w-[1400px] sm:pt-[50px] md:pt-[60px] flex sm:flex-col md:flex-row sm:mx-[30px] xl:mx-auto'>
                     {/* 1024屏幕以上 */}
                     <div className='hidden lg:flex flex-row relative'>
                         {
@@ -166,7 +166,7 @@ const CompanyIntroduction = () => {
 
                 {/* 商业布局和拓展 */}
                 <div className='max-w-[1400px] sm:pt-[50px] md:pt-[60px] flex sm:flex-col md:flex-row sm:mx-[30px] xl:mx-auto'>
-
+                    
                 </div>
             </div>
         </div>
