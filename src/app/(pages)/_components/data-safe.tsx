@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-12 20:32:45
- * @LastEditTime: 2024-01-27 19:23:36
+ * @LastEditTime: 2024-02-04 15:59:59
  * @FilePath: /minum-website/src/app/(pages)/_components/data-safe.tsx
  */
 import React from 'react'
@@ -12,7 +12,7 @@ import { Image } from "@nextui-org/react";
 const DataSafe = () => {
     let header = {
         title: '数据安全管理',
-        en_title: 'Product Introduction'
+        en_title: 'Data Security Management'
     }
     const introList = [
         {

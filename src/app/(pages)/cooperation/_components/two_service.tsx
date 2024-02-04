@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-17 21:48:50
- * @LastEditTime: 2024-01-18 20:16:24
+ * @LastEditTime: 2024-02-04 16:01:13
  * @FilePath: /minum-website/src/app/(pages)/cooperation/_components/two_service.tsx
  */
 import React from 'react'
@@ -12,7 +12,7 @@ import { Image } from "@nextui-org/react";
 const TwoService = () => {
     let header = {
         title: '密数云提供服务',
-        en_title: 'Enterprise pain points'
+        en_title: 'Minum Provides Services'
     }
     const list = [
         '文档分类分级',

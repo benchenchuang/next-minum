@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-17 21:48:50
- * @LastEditTime: 2024-01-17 22:25:38
+ * @LastEditTime: 2024-02-04 16:00:54
  * @FilePath: /minum-website/src/app/(pages)/cooperation/_components/one_service.tsx
  */
 import React from 'react'
@@ -12,7 +12,7 @@ import { Image } from "@nextui-org/react";
 const OneService = () => {
     let header = {
         title: '密数云提供服务',
-        en_title: 'Enterprise pain points'
+        en_title: 'Minum Provides Services'
     }
     const list = [
         '上网行为监控',

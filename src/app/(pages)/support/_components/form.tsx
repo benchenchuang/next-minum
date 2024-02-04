@@ -8,10 +8,11 @@ import { addInfo } from '@/api/consult';
 
 const SupportForm = () => {
     const animals = [
-        { label: "产品", value: "产品", description: "The second most popular pet in the world" },
-        { label: "Dog", value: "dog", description: "The most popular pet in the world" },
-        { label: "Elephant", value: "elephant", description: "The largest land animal" },
-        { label: "Lion", value: "lion", description: "The king of the jungle" },
+        { label: "公司采购,需要企业数据安全产品", value: "公司采购", description: "The second most popular pet in the world" },
+        { label: "公司试用选型,快速搞定特定场景的痛点问题", value: "公司试用选型", description: "The most popular pet in the world" },
+        { label: "个人试用研究,解决工作中数据安全问题", value: "个人试用研究", description: "The largest land animal" },
+        { label: "自己随便看看,解决个人问题,不商用", value: "自己随便看看", description: "The king of the jungle" },
+        { label: "其他原因", value: "其他原因", description: "The king of the jungle" },
     ]
     //获取验证码
     const getCodeString = ()=>{
@@ -31,7 +32,7 @@ const SupportForm = () => {
     //表单数据
     const initForm = {
         companyName:'',
-        type:'产品',
+        type:'公司采购',
         user:'',
         phone:'',
         email:'',
@@ -178,7 +179,7 @@ const SupportForm = () => {
                         {
                             animals.map(animal => {
                                 return (
-                                    <SelectItem key={animal.value} value={animal.value} description={animal.description}>
+                                    <SelectItem key={animal.value} value={animal.value} description={''}>
                                         {animal.label}
                                     </SelectItem>
                                 )
