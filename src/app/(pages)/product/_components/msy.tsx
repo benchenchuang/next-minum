@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-02-04 10:40:27
- * @LastEditTime: 2024-02-04 15:04:28
+ * @LastEditTime: 2024-02-04 15:44:08
  * @FilePath: /minum-website/src/app/(pages)/product/_components/msy.tsx
  */
 'use client';
@@ -40,8 +40,8 @@ const MSYModule = () => {
     <div className='bg-[#fff] relative overflow-hidden'>
         <div className='relative z-10'>
             <div className='max-w-[1200px] flex flex-col items-center md:mx-auto sm:py-[50px] md:pt-[70px]'>
-                <Image className='wow zoomInUp lg:w-[200px] xl:w-[304px]' src='/images/home/msy_logo.svg' alt='密数云'/>
-                <p className='wow slideInLeft text=[#666] font-[400px] tracking-[16px] mt-7 text-[18px]'>数据资产全生命周期保护</p>
+                <Image className='wow zoomInUp md:w-[200px] xl:w-[304px]' src='/images/home/msy_logo.svg' alt='密数云'/>
+                <p className='wow slideInLeft text=[#666] font-[400px] tracking-[16px] mt-7 sm:text-[14px] md:text-[18px]'>数据资产全生命周期保护</p>
             </div>
 
             <div className='max-w-[1200px] grid grid-flow-dense
@@ -58,7 +58,7 @@ const MSYModule = () => {
                                     bg-msy_module_bg ${key==activeKey && 'bg-msy_active_module'}`}
                                 key={key}
                                 onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem(-1)} >
-                                    <Image className='max-w-[176px]' src={item.path} alt={item.name}/>
+                                    <Image className='max-w-[176px]' radius='none' src={item.path} alt={item.name}/>
                                     <h3 className={`
                                          text-[36px] mt-[40px]
                                         ${key==activeKey?'text-white':'text-[#383838]'}
@@ -91,7 +91,7 @@ const MSYModule = () => {
                         <p className='font-[500] mb-2'>针对传统安全解决方案的缺陷：</p>
                         <p>无法全面资产盘点、人工分类分级、无法对涉密、敏感内容进行动态权限管理、改变操作习惯，降低日常工作效率、核心数据保护不足，非核心数据过度保护、企业外发无法跨平台、跨产品，无法溯源、无有效风控...</p>
                     </div>
-                    <div className='wow fadeInRight sm:mt-4'>
+                    <div className='wow fadeInRight sm:mt-4 md:mt-0'>
                         <p className='font-[500] mb-2'>密数云提出在无感深入业务的前提下，提出下一代的非结构化资产管理的价值主张，涵盖：</p>
                         <p>资产盘点、智能分类分级、内容识别管控，动态权限、全流程溯源、全平台外发，跨产品外发、数据合规、安全运营...</p>
                     </div>
@@ -101,7 +101,7 @@ const MSYModule = () => {
         
 
         <div className='absolute left-0 right-0 sm:top-3/4 md:top-2/3 lg:top-2/4 z-0'>
-            <Image src='/images/product/main_bg.png' alt='密数云'/>
+            <Image radius='none' src='/images/product/main_bg.png' alt='密数云'/>
         </div>
     </div>
   )
