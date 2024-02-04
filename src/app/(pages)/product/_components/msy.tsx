@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-02-04 10:40:27
- * @LastEditTime: 2024-02-04 15:44:08
+ * @LastEditTime: 2024-02-04 18:06:57
  * @FilePath: /minum-website/src/app/(pages)/product/_components/msy.tsx
  */
 'use client';
@@ -54,8 +54,8 @@ const MSYModule = () => {
                     serviceList.map((item,key)=>{
                         return (
                             <div
-                                className={`wow slideInUp flex flex-col items-center transition-all rounded-[8px] pt-[60px] pb-[32px]
-                                    bg-msy_module_bg ${key==activeKey && 'bg-msy_active_module'}`}
+                                className={`wow flipInY flex flex-col items-center transition-all rounded-[8px] pt-[60px] pb-[32px]
+                                    ${key==activeKey?'bg-msy_active_module':'bg-msy_module_bg'}`}
                                 key={key}
                                 onMouseEnter={()=>focusItem(key)} onMouseLeave={()=>focusItem(-1)} >
                                     <Image className='max-w-[176px]' radius='none' src={item.path} alt={item.name}/>
