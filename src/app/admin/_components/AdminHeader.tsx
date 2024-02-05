@@ -2,7 +2,7 @@
  * @Author: Jimmy
  * @LastModifiedBy: Jimmy
  * @Date: 2024-01-11 17:00:46
- * @LastEditTime: 2024-01-12 19:46:46
+ * @LastEditTime: 2024-02-05 18:42:47
  * @FilePath: /minum-website/src/app/admin/_components/AdminHeader.tsx
  */
 'use client'
@@ -30,7 +30,7 @@ const AdminHeader = () => {
 
     return (
         <div className='w-full flex flex-row px-[20px] text-white'>
-            <h1 className='text-[20px]'>医家安管理平台</h1>
+            <h1 className='text-[20px]'>密数云管理平台</h1>
             <div className='flex-1 flex flex-row justify-end items-center text-[14px]'>
                 <span className='mr-[20px]'>欢迎您使用</span>
                 <div className='cursor-pointer hover:opacity-70' onClick={handleQuit}>
